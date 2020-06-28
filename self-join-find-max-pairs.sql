@@ -32,8 +32,7 @@ INSERT INTO movie_table VALUES(30,3);
 
 SELECT t1.actor_id AS actor1, t2.actor_id AS actor2, count(t1.movie_id) AS total_movies
 FROM movie_table t1, movie_table t2
-    ON t1.movie_id = t2.movie_id
-    AND t1.actor_id < t2.actor_id
+     ON t1.movie_id = t2.movie_id AND t1.actor_id < t2.actor_id
 GROUP BY actor1, actor2
 ORDER BY total_movies DESC
 
