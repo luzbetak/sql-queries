@@ -1,5 +1,4 @@
--- 02 DATE/TIME functions
--- :memory:
+-- DATE/TIME functions
 
 SELECT DATETIME('now');
 SELECT DATE('now');
